@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+.header-wrap {
+    padding: 18px 0;
+}
+
+.header {
+    background-color: #222;
+    color: #fff;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo {
+    margin-right: 40px;
+}
+.header-icon-margin {
+    margin-right: 33px;
+}
+.logo-link {
+    margin-left: 41px;
+    text-decoration: none;
+}
+.icon-link {
+    margin: 0 33px;
+    color: transparent;
+}
+.btn-icon {
+    background-color: transparent;
+    border: none;
+}
+.header-col-1 {
+    display: flex;
+    align-items: center;
+}
+
+.promo {
+   background-color: #F1E4E6; 
+   
+}
+.promo-wrap {
+    background-image: url(../img/promo-img.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    height: 764px;
+}
+.promo-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+.promo-title--small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+
+.categories {
+    background-color: #fff;
+}
+
+.pruducts {
+    background-color: #fff;
+}
+
+.aside {
+    background-color: #222224;
+    color: #FBFBFB;
+}
+
+.subscribe {
+    color: #222224;
+}
+
+.footer {
+    background-color: #222224;
+    color: #FBFBFB;
+}
