@@ -62,9 +62,6 @@ body {
     font-size: 48px;
     line-height: 38px;
     color: #222222;
-    position: absolute;
-    top: 285px;
-    left: 640px;
     text-transform: uppercase;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -78,14 +75,21 @@ body {
 .promo-title--pink {
     color: #F16D7F;
 }
-.rectangle {
+.promo-title--dec {
+    position: relative;
+    top: 285px;
+    left: 640px;
+}
+.promo-title--dec::before {
     background-color:#F16D7F;
     width: 12px;
     height: 92px;
-    position: absolute;
-    top: 279px;
-    left: 612px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    content: "";
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -24px;
 }
 
 .categories {
@@ -94,11 +98,16 @@ body {
 .categories-preview {
     display: flex;
     margin-top: 60px;
+    flex-wrap: wrap;
 }
 .category-preview {
+    display: block;
     height: 260px;
     width: 360px;
     position: relative;
+}
+.category-link {
+    display: inline-block;
 }
 .category-women {
     background-image: url(../img/category-women.jpg);
@@ -111,9 +120,9 @@ body {
     background-image: url(../img/category-kids.jpg);
 }
 .category-accesories {
-    background-image: url(../img/category-ACCESORIES.jpg);
-    width: auto;
+    background-image: url(../img/category-accesories.jpg);
     height: 180px;
+    width: 100%;
     margin-bottom: 100px;
 }
 .categories-title {
@@ -136,7 +145,6 @@ body {
     font-weight: 700;
     line-height: 29px;
     color: #F16D7F;
-
 }
 
 .products {
@@ -256,7 +264,7 @@ body {
     width: 100%;
 }
 .subscribe-info {
-    background-image: url(../img/faceid.png);
+    background-image: url(../img/subscribe-img.png);
     background-repeat: no-repeat;
     background-position-x: center;
     max-width: 360px;
