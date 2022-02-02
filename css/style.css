@@ -26,12 +26,6 @@ body {
 .header-logo {
     margin-right: 40px;
 }
-.header-logo:hover img {
-    filter: brightness(30%);
-  }
-.header-logo:active img {
-    filter: brightness(10%);
-  }
 .header-icon-margin {
     margin-right: 33px;
 }
@@ -47,9 +41,6 @@ body {
     background-color: transparent;
     border: none;
 }
-.search-btn:hover button {
-    fill: orange;
-}
 .header-col-1 {
     display: flex;
     align-items: center;
@@ -57,6 +48,7 @@ body {
 
 .promo {
    background-color: #F1E4E6; 
+   
 }
 .promo-wrap {
     background-image: url(../img/promo-img.png);
@@ -162,8 +154,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
-    margin-top: 48px;
 }
 .products-title {
     font-size: 30px;
@@ -217,57 +207,16 @@ body {
     font-size: 16px;
     padding: 14px 38px;
 }
-.product-img {
-    position: relative;
-}
-.product-img-shadow {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #3A3838;
-    opacity: 0;
-    transition:  opacity 125ms;
-}
-.product-img-shadow:hover {
-    opacity: .84;
-    cursor: pointer;
-}
-.add-to-catd--btn:hover {
-    cursor: pointer;
-    background: #292727;
-}
-.add-to-catd--btn:active {
-    background: #292727;
-}
-.add-to-catd--btn {
-    position: relative;
-    background: #3A3838;
-    color: #ffffff;
-    padding: 13px 13px 13px 50px;
-    border: 1px solid #ffffff;
-}
-.add-to-catd--btn::before {
-    content: "";
-    background-image: url(../img/icon-cart.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 7px;
-    left: 10px;
-    padding: 16px;
-}
 
-.benefits {
+.aside {
     background-color: #222224;
     color: #FBFBFB;
 }
-.benefits-wrap {
+.aside-wrap {
     display: flex;
     justify-content: space-between;
 }
-.benefits-info{
+.aside-info{
     max-width: 360px;
     padding: 0 20px;
     margin: 104px 0;
@@ -275,16 +224,16 @@ body {
     background-position-x: center;
     background-position-y: top;
 }
-.benefits-info--delivery {
+.aside-info--delivery {
     background-image: url(../img/aside-1.svg);
 }
-.benefits-info--sale {
+.aside-info--sale {
     background-image: url(../img/aside-2.svg);
 }
-.benefits-info--quality {
+.aside-info--quality {
     background-image: url(../img/aside-3.svg);
 }
-.benefits-title {
+.aside-title {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -292,7 +241,7 @@ body {
     text-align: center;
     padding: 60px 0 16px 0;
 }
-.benefits-text {
+.aside-text {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -363,16 +312,7 @@ body {
     border-radius: 0 50px 50px 0;
     width: 100px;
     color: #FFFFFF;
-    transition: 150ms;
-}
-.subscribe-btn:hover {
-    background-color: #fff;
-    color: #F16D7F;
-    cursor: pointer;
-}
-.subscribe-btn:active {
-    color: #fff;
-    background-color: #F16D7F;
+
 }
 .italic {
     font-style: italic;
@@ -394,94 +334,13 @@ body {
 }
 .social-icons {
     display: flex;
+    justify-content: center;
+    list-style: none;
     margin: 24px 0;
 }
 .social-icons>li {
     margin-right:7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-}
-.social-icon svg {
-    fill: #000;
-}
-.social-icon:hover svg {
-    fill: #F16D7F;
-}
-.social-icon:active {
-    background-color: #F16D7F;
-}
-.social-icon:active svg {
-    fill: #fff;
 }
 ul.social-icons li:last-child {
     margin: 0;
 }
-
-
-/* catalog.css */
-
-.nav {
-    background-color: #F8F3F4;
-}
-.nav-wrap {
-    height: 148px;
-    display: flex;
-    justify-content: space-between;
-}
-.arrivals {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #F16D7F;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    align-self: center;
-}
-ul.breadcrumb {
-    align-self: center;
-    list-style: none;
-}
-ul.breadcrumb li {
-    display: inline;
-    font-size: 14px;
-    text-transform: uppercase;
-    line-height: 17;
-    font-weight: 700;
-    color: #F16D7F;
-}
- ul.breadcrumb li+li:before {
-    padding: 4px;
-    color: #636363;
-    content: "/\00a0";
-}
-ul.breadcrumb li a {
-    color: #636363;
-    text-decoration: none;
-    font-weight: 300;
-}
-ul.breadcrumb li a:hover {
-    text-decoration: underline;
-}
-.pagination {
-    align-items: center;
-    display: inline-block;
-}
-  
-.pagination a {
-    color: rgb(129, 129, 129);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    padding: 8px 8px;
-    text-decoration: none;
-    transition: background-color .3s;
-}
-  
-.pagination a.active {
-    color: #EF5B70;
-}
-
