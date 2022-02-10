@@ -16,29 +16,30 @@
 <body>
     <header class="header">
         <div class="wrap header-wrap">
-         <div class="header-col-1">
-             <a href="index.html" class="header-logo">
-                 <img src="img/logo.png" alt="logo">
-             </a>
-             <button class="btn-icon search-btn">
-                 <img src="img/icon-search.svg" alt="search">
-             </button>
-         </div>
-         <div class="header-col-2">
-             <button class="btn-icon">
-                 <img src="img/icon-menu.svg" alt="menu">
-             </button>
-             <a href="#" class="icon-link">
-                 <img src="img/icon-user.svg" alt="user">
-             </a>
-             <button class="btn-icon">
-                 <img src="img/icon-cart.svg" alt="cart">
-             </button>
-         </div>
+        <div class="header-col-1">
+            <a href="index.html" class="header-logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+             <form action="search" class="search-icon-form">
+                <input class="search-icon-form__input" id="search" type="search">
+                <label for="search" class="search-icon-form__label"></label>
+            </form>
         </div>
-     </header>
+        <div class="header-col-2">
+            <button class="btn-icon">
+                <img src="img/icon-menu.svg" alt="menu">
+            </button>
+            <a href="#" class="icon-link">
+                <img src="img/icon-user.svg" alt="user">
+            </a>
+            <button class="btn-icon">
+                <img src="img/icon-cart.svg" alt="cart">
+            </button>
+        </div>
+        </div>
+    </header>
 
-     <main>
+    <main>
         <nav class="nav">
             <div class="wrap nav-wrap">
                 <h1 class="nav-title">new arrivals</h1>
@@ -138,7 +139,7 @@
                 </li>
             </ul>
         </section>
-     </main>
+    </main>
 
      <footer>
         <section class="benefits">
