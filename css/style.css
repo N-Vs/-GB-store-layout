@@ -158,13 +158,17 @@ body {
     flex-wrap: wrap;
 }
 .category-preview {
-    display: block;
+    display: inline-block;
     height: 260px;
     width: 360px;
     position: relative;
+    transition: 1s;
+}
+.category-preview:hover {
+    transform: scale(1.05);
 }
 .category-link {
-    display: inline-block;
+    display: block;
 }
 .category-women {
     background-image: url(../img/category-women.jpg);
@@ -566,6 +570,8 @@ div.pagination-catalog a:last-child {
     text-transform: uppercase;
     display: flex;
     padding: 50px 65px 0 0;
+    position: relative;
+    height: 100px;
 }
 input:focus,
 button:focus {
@@ -586,8 +592,9 @@ button:focus-visible{
     padding: 13px 16px 16px 16px;
     box-sizing: border-box;
     background: #FFFFFF;
-    transition: 150ms;
-    margin-right: 90px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
 }
 .filter-btn {
     display: block;
@@ -693,7 +700,12 @@ button:focus-visible{
 }
 .filter-sublist-item:active a {
     color: #000;
-}  
+} 
+.filter-sort {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%)
+} 
 ul.filter-sort-quik {
     display: flex;
     margin: 0 auto;
