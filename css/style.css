@@ -1,4 +1,5 @@
 * {
+    border: 1px solid black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +9,8 @@ body {
 }
 
 .wrap {
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
 }
 .header-wrap {
@@ -113,6 +115,7 @@ body {
     background-position-y: bottom;
     height: 764px;
     position: relative;
+    background-size: contain;
 }
 .promo-title {
     font-size: 48px;
@@ -364,17 +367,16 @@ body {
 }
 
 .subscribe {
-    color: #222224;
-    background: rgba(244, 244, 244, 0.7);
-}
-.subscribe-wrap {
     background-image: url(../img/subscribe-background.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
+    color: #222224;
+}
+.subscribe-wrap {
     height: 448px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 .subscribe-info {
@@ -382,7 +384,6 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     max-width: 360px;
-    margin-right: 327px;
 }
 .subscribe-info--text {
     font-size: 20px;
@@ -1049,3 +1050,117 @@ ul.shopping-cart-products {
     color: #FFFFFF;
 }
 
+/* registration */
+
+.registration-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+.registration-form p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.registration-form input {
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    text-indent: 17px;
+    width: 360px;
+    height: 44px;
+    margin: 10px 0;
+    border: 1px solid #A4A4A4;
+}
+.form-select input {
+    width: 17px;
+    height: 17px;
+}
+.form-select {
+    display: flex;
+    align-items: center;
+}
+.form-select label {
+    margin: 0 20px 0 10px;
+}
+.registration-form-password-prompting {
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    width: 360px;
+}
+.registration-btn {
+    background: #F16D7F;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+}
+.registration-benefits {
+    font-weight: 300;
+    width: 650px;
+}
+.registration-benefits h2 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+.registration-benefits p {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 22px 0;
+}
+.registration-benefits li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+.registration-benefits li::before {
+    font-weight: 400;
+    font-family: fontawesome !important;
+    content: "\f00c";
+}
+
+@media (min-width: 1281px) {
+    
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .wrap {
+        max-width: 735px;
+    }
+    .promo-wrap {
+        height: 368px;
+        background-position-x: -110px;
+    }
+    .promo-title--dec {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 540px;
+    }
+    .promo-title {
+        font-size: 44px;
+        line-height: 53px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
