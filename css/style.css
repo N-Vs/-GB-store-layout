@@ -159,11 +159,12 @@ body {
     display: flex;
     margin-top: 60px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .category-preview {
     display: inline-block;
     height: 260px;
-    width: 360px;
+    width: 22rem;
     position: relative;
     transition: 1s;
 }
@@ -178,7 +179,7 @@ body {
 }
 .category-men {
     background-image: url(../img/category-men.jpg);
-    margin: 0 30px 30px 30px;
+    margin-bottom: 30px;
 }
 .category-kids {
     background-image: url(../img/category-kids.jpg);
@@ -536,7 +537,6 @@ ul.breadcrumb li a:hover {
 
 .pagination-catalog {
     margin: 0 auto;
-    width: 310px;
     text-align: center;
     margin-bottom: 96px;
     border: 1px solid #cecece;
@@ -977,8 +977,6 @@ ul.shopping-cart-products {
     background-color: #eaeaea;
     cursor: pointer;
 }
-.shopping-cart-offer {
-}
 .shopping-cart-form {
     display: flex;
     flex-direction: column;
@@ -1135,7 +1133,7 @@ ul.shopping-cart-products {
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
     .wrap {
-        max-width: 735px;
+        max-width: 768px;
     }
     .promo-wrap {
         height: 368px;
@@ -1149,6 +1147,21 @@ ul.shopping-cart-products {
     .promo-title {
         font-size: 44px;
         line-height: 53px;
+    }
+    .category-preview {
+        width: 15rem;
+        height: 167px;
+    }
+    .category-accesories {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 150px ;
+    }
+    .category-men {
+        margin-bottom: 20px;
+    }
+    .product-card {
+        margin-bottom: 15px;
     }
     
 }
