@@ -118,6 +118,7 @@ body {
     background-size: contain;
 }
 .promo-title {
+    font-weight: 900;
     font-size: 48px;
     line-height: 38px;
     color: #222222;
@@ -371,6 +372,7 @@ body {
     background-image: url(../img/subscribe-background.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
+    background-size: cover;
     color: #222224;
 }
 .subscribe-wrap {
@@ -1131,7 +1133,7 @@ ul.shopping-cart-products {
 @media (min-width: 1281px) {
     
 }
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
     .wrap {
         max-width: 768px;
     }
@@ -1143,10 +1145,6 @@ ul.shopping-cart-products {
         transform: translate(-50%, -50%);
         top: 50%;
         left: 540px;
-    }
-    .promo-title {
-        font-size: 44px;
-        line-height: 53px;
     }
     .category-preview {
         width: 15rem;
@@ -1165,14 +1163,70 @@ ul.shopping-cart-products {
     }
     
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-
+@media (max-width: 1024px) {
+    .wrap {
+        max-width: 735px;
+    }
+    .promo-wrap {
+        height: 368px;
+        background-position-x: -110px;
+    }
+    .promo-title--dec {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 540px;
+    }
+    .promo-title {
+        font-size: 44px;
+        line-height: 34px;
+    }
+    .promo-title--small {
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+    .category-preview {
+        width: 15rem;
+        height: 167px;
+    }
+    .category-accesories {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 150px ;
+    }
+    .category-men {
+        margin-bottom: 20px;
+    }
+    .product-card {
+        margin-bottom: 15px;
+    }
+    .benefits-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits-info {
+        margin: 25px 0;
+    }
+    .subscribe-wrap {
+        height: 448px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
 }
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-}
-@media (min-width: 481px) and (max-width: 767px) {
-
+@media (max-width: 767px) {
+    
+    .promo-wrap {
+        background-image: none;
+    }
+    .promo-title--dec {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
 }
 @media (min-width: 320px) and (max-width: 480px) {
 
